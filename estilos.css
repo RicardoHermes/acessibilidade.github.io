@@ -1,0 +1,529 @@
+
+ body {
+    background-color: rgb(152, 154, 154);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+  }
+  select {
+    text-align: center; /* para Firefox */
+    text-align-last: center; /* para Chrome */
+  }
+  center {
+    text-align: center;
+  }
+  table {
+    margin: 0 auto; /* centraliza a tabela horizontalmente */
+  }
+  
+  caption {
+    text-align: center; /* centraliza o texto do caption */
+  }
+  
+
+  
+  .header {
+    display: flex;
+    background-color: #3b3b3b;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .nav-bar {
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+
+  }
+  
+
+  .home {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.2s;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .home:hover , a:hover {
+    transform: translateY(-5px);
+    color: rgb(197, 176, 176);
+  }
+
+  .container-principal {
+    background-color: #ffffffa9;
+    display: flex;
+    margin: 2rem;
+    border-radius: 15px;
+  }
+
+  .imagem {
+    margin:10px;
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+  .imagem > img {
+    max-width: 500px;
+    border-radius: 15px;
+  }
+   
+   
+  #img-box {
+      border-radius: 15px;
+      width: 300px;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 50%;
+  }
+  
+  #img-box > img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px; 
+  }
+  
+
+  .texto {
+    text-decoration: none;
+    text-align: justify;
+    margin: 3rem;
+
+  }
+  .container-meio {
+    background-color: #ffffffa9;
+    display: flex;
+    margin: 2rem;
+    border-radius: 15px;
+    flex-direction: row-reverse; 
+}
+
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000; 
+  padding: 4rem 1rem;
+  gap: 2rem;
+}
+.download-options >* {
+  margin: 1rem 0;
+}
+
+.download-options > p:first-child {
+ font-weight: bold;
+ color: #000000;
+}
+
+.download-options > div {
+  display: flex;
+}
+
+.download-options > div img {
+  width: 180px;
+  margin: 10px;
+  cursor: pointer;
+  
+}
+
+.logo-footer {
+  text-align: center;
+  
+
+}
+
+.links-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-footer ul {
+  list-style: none;
+
+}
+
+.links-footer ul li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  color: #000000;
+  transition: all 0.2s;
+}
+
+.links-footer ul li:hover {
+  color: #ffffffa9;
+}
+
+.copyrigth {
+  color: #000000;
+  padding: 2rem 0;
+  text-align: center;
+
+}
+
+.tabela {
+  background-color: #ffffffa9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 15px;
+  width: 50%;
+}
+
+.tabela a {
+  color: blue;
+}
+
+.tabela a:hover{
+  color: #008CBA;
+}
+
+.botao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  width: 80%; 
+}
+
+
+.botao .home {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.botao .home:hover {
+    background-color: #45a049;
+}
+.container-cadastro {
+  background-color: #ffffffa9;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  margin: 2rem;
+  max-width: 100%;
+  margin-top: 25px;
+
+}
+
+.container-cadastro > .texto {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+
+}
+
+#contato {
+  display: flex;
+  flex-direction: column ;
+
+}
+
+#container_formulario {
+  margin: 20px 0 40px 0;
+  padding: 20px;
+  max-width: 800px;
+  background-color: var(--box-bg-color);
+  border-radius: 10px;
+  align-self: center;
+
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  flex: 1;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type="text"]:nth-child(3n) {
+  flex-basis: 100%;
+}
+
+form div {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 100%;
+}
+
+h4 {
+  font-size: 18px;
+  margin: 5px 10px;
+}
+
+@media (max-width: 800px){
+  .logo{
+      font-size: 1.2rem;
+  }
+
+  .menu-button{
+      display: block;
+  }
+
+  .header-bottom-side{
+      flex-direction: column;
+      text-align: center;
+      padding-top: 4rem;
+  }
+
+  nav {
+      position: absolute;
+      background-color: #2c2c2c;
+      width: 100%;
+      top:  46px;
+      display: none;
+  }
+
+  .show-menu nav{
+      display: block;
+
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav ul li{
+      text-align: center;
+      padding: 0.8rem;
+  }
+}
+
+/* Header */
+
+/* Main content */
+
+main {
+  background-color: #ebebeb;
+  
+}
+
+.gray-background {
+  background-color: #5c5a80;
+  
+}
+
+.page-inner-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  
+}
+
+.cols {
+  display: grid;
+  justify-content: space-evenly;
+  padding: 4rem 1rem;
+}
+
+.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;   
+  transition: all 0.2s;
+}
+
+.cols-3 :hover {
+  transform: translateY(-5px);
+  font-weight: bold;
+
+}
+
+.cols-3 img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.cols-4 img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+
+.cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  transition: all 0.2s;
+}
+
+.cols-4 :hover {
+  transform: translateY(-5px);
+  font-weight: bold;
+}
+
+.cols-4 img {
+  max-width: 100%;
+}
+
+.cols>* {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cols>* :hover {
+  transform: translateY(-5px);
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.8rem;
+
+}
+
+.subtitle-underline {
+  width: 200px;
+  height: 5px;;
+  background: #0084ff;
+  border-radius: 50px;
+  margin: 8px auto 0 auto;
+}
+
+.product {
+  color: #2c2c2c;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name {
+  font-weight: 600;
+  margin-top: 0.4rem;
+}
+
+.rate {
+  color: #0084ff;
+  font-size: 1.3rem;
+}
+
+.produtc-price span {
+  font-weight: 600;
+}
+
+.exclusive-container {
+  color: #fff;
+  flex-direction: row-reverse;
+  padding:  5rem 1rem;
+}
+
+.exclusive-container img {
+  max-width: 500px;
+}
+
+/* Media queries */
+
+@media (max-width: 800px) {
+  .section-title {
+      font-size: 1rem;
+  }
+
+  .cols-3 {
+      grid-template: repeat(1, 1fr);
+  }
+  .cols-4 {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .product-name, .produtc-price, .rate {
+      max-height: 1rem;
+      overflow: hidden;
+      font-size: 0.8rem;
+  }
+
+  .exclusive-container {
+      flex-direction: column-reverse;
+  }
+
+  .exclusive-container img {
+      margin-bottom: 4rem;
+  }
+}
+
+
+/* Main Content */
+
+/*testemunho*/
+.testimonials {
+  display: flex;
+  padding: 4rem 1rem;
+  justify-content: space-evenly;
+  transition: all 0.2s;
+}
+
+.testimonials :hover {
+  transform: translateY(-5px) 
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-basis: 30%;
+  text-align: center;
+  box-shadow: 0 0 15px #afafaf;
+  padding: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.testimonial p {
+  margin: 5px 0;
+}
+
+.testimonial p:first-child {
+  font-weight: bold;
+  font-size: 5rem;
+  color: #0084ff;
+  margin-top: 3rem;
+  line-height: 2rem;
+}
+
+.testimonial p:last-child {
+  font-weight: bold ;
+}
+
